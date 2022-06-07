@@ -3,16 +3,18 @@ import React from 'react'
 import Head from 'next/head'
 
 import { Container } from '../styles/pages/Home'
+import Header from '../components/header'
+import Hero from '../components/hero'
 
 const Home: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>NextJS Setup</title>
+        <title>JVM</title>
       </Head>
 
-      <h1>NextJS Structure</h1>
-      <p>Next.js development structure by JVM's employee Gustavo Ferreira.</p>
+      <Header />
+      <Hero />
     </Container>
   )
 }
