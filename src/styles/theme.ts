@@ -13,7 +13,9 @@ const theme = {
     title: '#24282A',
     subtitle: '#A7B0B4',
     star: '#FFCC01',
-    planBorder: '#DBE0EF'
+    planBorder: '#DBE0EF',
+    browserFrame: '#DFE2F0',
+    browserDot: '#BFC2D4'
   }
 }
 
