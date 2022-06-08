@@ -2,6 +2,7 @@ import React from 'react'
 import { Container } from './styles'
 
 import iphones from '../../public/hero/iphone.png'
+import iphoneDots from '../../public/hero/iphone-dots.png'
 
 const Hero = () => {
   return (
@@ -17,8 +18,9 @@ const Hero = () => {
           <button className="filled-btn">Portfólio</button>
           <button className="unfilled-btn">Montar meu site</button>
         </div>
-        <img src={iphones} alt="Iphones Hero" className="iphones" />
       </div>
+      <img src={iphoneDots} alt="Iphone Dots" className="iphone-dots" />
+      <img src={iphones} alt="Iphones Hero" className="iphones" />
     </Container>
   )
 }

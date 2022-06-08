@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { Container } from '../styles/pages/Home'
 import Header from '../components/header'
 import Hero from '../components/hero'
+import Browser from '../components/browser'
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
 
       <Header />
       <Hero />
+      <Browser />
     </Container>
   )
 }

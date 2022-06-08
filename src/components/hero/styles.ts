@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 970px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +12,7 @@ export const Container = styled.div`
     ${props => props.theme.colors.secundary} 100%
   );
   margin-top: -110px;
+  margin-bottom: 185px;
 
   .hero {
     width: 1170px;
@@ -21,6 +22,7 @@ export const Container = styled.div`
   }
 
   .hero-text {
+    padding-top: 110px;
     width: 615px;
     display: flex;
     flex-direction: column;
@@ -76,8 +78,20 @@ export const Container = styled.div`
   }
 
   .iphones {
+    width: 622px;
+    height: 721px;
     position: absolute;
     right: 10vw;
-    top: 218px;
+    top: 35vh;
+    user-select: none;
+  }
+
+  .iphone-dots {
+    width: 471px;
+    height: 672px;
+    position: absolute;
+    right: 13vw;
+    top: 35vh;
+    user-select: none;
   }
 `

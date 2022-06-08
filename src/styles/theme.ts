@@ -10,6 +10,7 @@ const theme = {
     whiteText: '#FFF',
     blackText: '#24282A',
     grayText: '#939FA4',
+    title: '#24282A',
     subtitle: '#A7B0B4',
     star: '#FFCC01',
     planBorder: '#DBE0EF'

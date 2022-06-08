@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@iconify/react": "^3.2.2",
     "next": "9.5.2",
     "next-images": "^1.8.4",
     "react": "16.13.1",

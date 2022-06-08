@@ -14,6 +14,10 @@ export const Container = styled.div`
     align-items: center;
   }
 
+  .header-logo {
+    user-select: none;
+  }
+
   .menu {
     width: 427px;
     display: flex;

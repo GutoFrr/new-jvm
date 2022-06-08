@@ -16,6 +16,6 @@ export default createGlobalStyle`
     background: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.blackText};
     font: 400 16px 'Roboto', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 `

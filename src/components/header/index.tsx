@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Container>
       <div className="header">
-        <img src={headerLogo} alt="Logo JVM Header" />
+        <img src={headerLogo} alt="Logo JVM Header" className="header-logo" />
         <div className="menu">
           <ul className="menu-items">
             {menuItems.map((item, key) => (
