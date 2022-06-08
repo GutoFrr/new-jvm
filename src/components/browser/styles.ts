@@ -2,13 +2,11 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100vw;
-  height: 1292px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 169px;
 
   .browser {
     width: 996px;
@@ -17,6 +15,7 @@ export const Container = styled.div`
     filter: drop-shadow(0px 30px 80px rgba(0, 0, 0, 0.2));
     border-radius: 10px;
     margin-top: 144px;
+    margin-bottom: 169px;
     position: relative;
     z-index: 2;
   }
@@ -28,6 +27,7 @@ export const Container = styled.div`
     border-bottom-right-radius: 10px;
     position: absolute;
     bottom: 0;
+    user-select: none;
   }
 
   .dots {
@@ -59,7 +59,9 @@ export const Container = styled.div`
 
   .browser-dots {
     position: absolute;
-    bottom: 0;
-    left: 20%;
+    bottom: 8.8%;
+    left: 19.6%;
+    z-index: 1;
+    user-select: none;
   }
 `
