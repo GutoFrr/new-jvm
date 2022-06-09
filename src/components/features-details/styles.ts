@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Title } from '../../styles/title'
+import { Title } from '../../styles/components/title'
 
 export const Container = styled.div`
   width: 100vw;
@@ -8,6 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   row-gap: 185px;
+  padding-bottom: 250px;
   position: relative;
 
   .details-container {
@@ -30,8 +31,6 @@ export const Container = styled.div`
 
   .first-iphone {
     z-index: 3;
-    width: 315px;
-    height: 699px;
   }
 
   .first-dots {
@@ -61,8 +60,6 @@ export const Container = styled.div`
 
   .second-iphone {
     z-index: 3;
-    width: 315px;
-    height: 699px;
   }
 
   .second-dots {

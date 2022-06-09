@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from './styles'
+import { Container, PortfolioButton, UnfilledButton } from './styles'
 
 import iphones from '../../public/hero/iphone.png'
 import iphoneDots from '../../public/hero/iphone-dots.png'
@@ -15,8 +15,8 @@ const Hero = () => {
           </h5>
         </div>
         <div className="hero-btns">
-          <button className="filled-btn">Portfólio</button>
-          <button className="unfilled-btn">Montar meu site</button>
+          <PortfolioButton>Portfólio</PortfolioButton>
+          <UnfilledButton>Montar meu site</UnfilledButton>
         </div>
       </div>
       <img src={iphoneDots} alt="Iphone Dots" className="iphone-dots" />

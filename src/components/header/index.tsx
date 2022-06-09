@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from './styles'
+import { ContactButton, Container } from './styles'
 import { menuItems } from './data'
 
 import headerLogo from '../../public/header/HeaderLogo.png'
@@ -17,7 +17,7 @@ const Header = () => {
               </a>
             ))}
           </ul>
-          <button className="contact-btn">Contato</button>
+          <ContactButton>Contato</ContactButton>
         </div>
       </div>
     </Container>

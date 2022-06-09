@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from './styles'
 import { Icon } from '@iconify/react'
-import { Title } from '../../styles/title'
+import { Title } from '../../styles/components/title'
 
 import colorSelection from '../../public/browser/color-selection.png'
 import browserDots from '../../public/browser/browser-dots.png'

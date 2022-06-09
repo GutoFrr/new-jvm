@@ -8,6 +8,10 @@ import Hero from '../components/hero'
 import Browser from '../components/browser'
 import Features from '../components/features'
 import FeaturesDetails from '../components/features-details'
+import CTASolutions from '../components/cta-solutions'
+import Pricing from '../components/pricing'
+import CTABriefing from '../components/cta-briefing'
+import Footer from '../components/footer'
 
 const Home: React.FC = () => {
   return (
@@ -21,6 +25,10 @@ const Home: React.FC = () => {
       <Browser />
       <Features />
       <FeaturesDetails />
+      <CTASolutions />
+      <Pricing />
+      <CTABriefing />
+      <Footer />
     </Container>
   )
 }

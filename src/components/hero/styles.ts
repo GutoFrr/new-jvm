@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Button } from '../../styles/components/button'
 
 export const Container = styled.div`
   width: 100vw;
@@ -53,12 +54,7 @@ export const Container = styled.div`
   .filled-btn {
     width: 150px;
     height: 50px;
-    background: linear-gradient(
-      225deg,
-      ${props => props.theme.colors.secundary} 0%,
-      ${props => props.theme.colors.primary} 100%
-    );
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.3);
+
     font: 500 14px 'Roboto', sans-serif;
     color: ${props => props.theme.colors.whiteText};
     border: none;
@@ -69,10 +65,8 @@ export const Container = styled.div`
   .unfilled-btn {
     width: 150px;
     height: 50px;
-    background: transparent;
     font: 500 14px 'Roboto', sans-serif;
     color: ${props => props.theme.colors.whiteText};
-    border: 1px solid ${props => props.theme.colors.whiteText};
     border-radius: 25px;
     cursor: pointer;
   }
@@ -94,4 +88,18 @@ export const Container = styled.div`
     top: 35vh;
     user-select: none;
   }
+`
+
+export const PortfolioButton = styled(Button)`
+  background: linear-gradient(
+    225deg,
+    ${props => props.theme.colors.secundary} 0%,
+    ${props => props.theme.colors.primary} 100%
+  );
+`
+
+export const UnfilledButton = styled(Button)`
+  background: transparent;
+  border: 1px solid ${props => props.theme.colors.whiteText};
+  box-shadow: none;
 `
