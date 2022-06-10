@@ -8,7 +8,8 @@ export const Container = styled.div`
   padding-top: 44px;
 
   .header {
-    width: 1170px;
+    width: 80vw;
+    max-width: 1170px;
     height: 66px;
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,7 @@ export const Container = styled.div`
 
   .menu {
     width: 427px;
+    height: 66px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,6 +30,7 @@ export const Container = styled.div`
 
     .menu-items {
       width: 239px;
+      height: 66px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -49,4 +52,10 @@ export const ContactButton = styled(Button)`
     ${props => props.theme.colors.terciary} 0%,
     ${props => props.theme.colors.quaternary} 100%
   );
+
+  :hover {
+    width: 160px;
+    height: 57px;
+    border-radius: 35px;
+  }
 `

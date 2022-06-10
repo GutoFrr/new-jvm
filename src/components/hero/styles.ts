@@ -16,7 +16,8 @@ export const Container = styled.div`
   margin-bottom: 185px;
 
   .hero {
-    width: 1170px;
+    width: 80vw;
+    max-width: 1170px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -49,44 +50,60 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     gap: 30px;
+    height: 60px;
+    margin-bottom: 50px;
   }
 
-  .filled-btn {
-    width: 150px;
-    height: 50px;
-
-    font: 500 14px 'Roboto', sans-serif;
-    color: ${props => props.theme.colors.whiteText};
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-  }
-
-  .unfilled-btn {
-    width: 150px;
-    height: 50px;
-    font: 500 14px 'Roboto', sans-serif;
-    color: ${props => props.theme.colors.whiteText};
-    border-radius: 25px;
-    cursor: pointer;
-  }
-
-  .iphones {
-    width: 622px;
-    height: 721px;
+  .iphone {
+    width: 32vw;
+    min-width: 420px;
     position: absolute;
-    right: 10vw;
+    right: 135px;
     top: 35vh;
-    user-select: none;
   }
 
-  .iphone-dots {
-    width: 471px;
-    height: 672px;
-    position: absolute;
-    right: 13vw;
-    top: 35vh;
-    user-select: none;
+  @media screen and (max-width: 1280px) {
+    .hero-text {
+      .hero-title {
+        font: 700 7vw 'Roboto', sans-serif;
+        line-height: 100px;
+      }
+
+      .hero-subtitle {
+        font: 400 18px 'Roboto', sans-serif;
+        line-height: 24px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .hero {
+      align-items: center;
+    }
+
+    .hero-text {
+      text-align: center;
+      padding-top: 300px;
+    }
+
+    .iphone {
+      position: static;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .hero-text {
+      .hero-title {
+        font: 700 70px 'Roboto', sans-serif;
+        line-height: 80px;
+        margin-bottom: 20px;
+      }
+
+      .hero-subtitle {
+        font: 400 18px 'Roboto', sans-serif;
+        line-height: 20px;
+      }
+    }
   }
 `
 
@@ -96,10 +113,28 @@ export const PortfolioButton = styled(Button)`
     ${props => props.theme.colors.secundary} 0%,
     ${props => props.theme.colors.primary} 100%
   );
+
+  :hover {
+    width: 160px;
+    height: 57px;
+    border-radius: 35px;
+  }
 `
 
 export const UnfilledButton = styled(Button)`
   background: transparent;
   border: 1px solid ${props => props.theme.colors.whiteText};
   box-shadow: none;
+
+  :hover {
+    width: 160px;
+    height: 57px;
+    border-radius: 35px;
+    border: none;
+    background: linear-gradient(
+      45deg,
+      ${props => props.theme.colors.terciary} 0%,
+      ${props => props.theme.colors.quaternary} 100%
+    );
+  }
 `

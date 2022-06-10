@@ -1,8 +1,7 @@
 import React from 'react'
 import { Container, PortfolioButton, UnfilledButton } from './styles'
 
-import iphones from '../../public/hero/iphone.png'
-import iphoneDots from '../../public/hero/iphone-dots.png'
+import iphone from '../../public/hero/iphone-1.png'
 
 const Hero = () => {
   return (
@@ -18,9 +17,8 @@ const Hero = () => {
           <PortfolioButton>Portfólio</PortfolioButton>
           <UnfilledButton>Montar meu site</UnfilledButton>
         </div>
+        <img src={iphone} alt="Iphone Hero" className="iphone" />
       </div>
-      <img src={iphoneDots} alt="Iphone Dots" className="iphone-dots" />
-      <img src={iphones} alt="Iphones Hero" className="iphones" />
     </Container>
   )
 }

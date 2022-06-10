@@ -62,6 +62,7 @@ export const CTAButtons = styled.div`
   align-items: center;
   column-gap: 30px;
   margin-bottom: 60px;
+  height: 60px;
 `
 
 export const FastBuildButton = styled(Button)`
@@ -74,6 +75,12 @@ export const FastBuildButton = styled(Button)`
   width: 160px;
   height: 60px;
   border-radius: 30px;
+
+  :hover {
+    width: 170px;
+    height: 67px;
+    border-radius: 35px;
+  }
 `
 
 export const ContactButton = styled(Button)`
@@ -86,6 +93,12 @@ export const ContactButton = styled(Button)`
   width: 160px;
   height: 60px;
   border-radius: 30px;
+
+  :hover {
+    width: 170px;
+    height: 67px;
+    border-radius: 35px;
+  }
 `
 
 export const Review = styled.div`

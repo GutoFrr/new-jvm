@@ -90,6 +90,10 @@ export const PlanButton = styled(Button)`
   height: 60px;
   border-radius: 30px;
   transition: all 0.3s;
+
+  :hover {
+    box-shadow: none;
+  }
 `
 
 export const PlanBorder = styled.div`
