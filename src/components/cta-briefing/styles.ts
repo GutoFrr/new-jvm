@@ -38,12 +38,6 @@ export const BriefingButton = styled(Button)`
   width: 160px;
   height: 60px;
   border-radius: 30px;
-
-  :hover {
-    width: 170px;
-    height: 67px;
-    border-radius: 35px;
-  }
 `
 
 export const ContactButton = styled(Button)`
@@ -57,10 +51,4 @@ export const ContactButton = styled(Button)`
   width: 160px;
   height: 60px;
   border-radius: 30px;
-
-  :hover {
-    width: 170px;
-    height: 67px;
-    border-radius: 35px;
-  }
 `

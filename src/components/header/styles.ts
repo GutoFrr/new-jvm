@@ -47,15 +47,18 @@ export const Container = styled.div`
 `
 
 export const ContactButton = styled(Button)`
-  background: linear-gradient(
+  background-image: linear-gradient(
     45deg,
     ${props => props.theme.colors.terciary} 0%,
     ${props => props.theme.colors.quaternary} 100%
   );
+  transition: background-image 0.5s linear;
 
   :hover {
-    width: 160px;
-    height: 57px;
-    border-radius: 35px;
+    background-image: linear-gradient(
+      45deg,
+      ${props => props.theme.colors.terciary} 20%,
+      ${props => props.theme.colors.quaternary} 120%
+    );
   }
 `

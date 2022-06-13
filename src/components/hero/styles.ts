@@ -113,12 +113,6 @@ export const PortfolioButton = styled(Button)`
     ${props => props.theme.colors.secundary} 0%,
     ${props => props.theme.colors.primary} 100%
   );
-
-  :hover {
-    width: 160px;
-    height: 57px;
-    border-radius: 35px;
-  }
 `
 
 export const UnfilledButton = styled(Button)`
@@ -127,9 +121,6 @@ export const UnfilledButton = styled(Button)`
   box-shadow: none;
 
   :hover {
-    width: 160px;
-    height: 57px;
-    border-radius: 35px;
     border: none;
     background: linear-gradient(
       45deg,
